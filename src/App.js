@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Recipies from "./Pages/Recipies";
+import ViewRecipe from "./Pages/ViewRecipe";
+
 const App = ()=>{
     return(
         <Router>
@@ -12,6 +14,7 @@ const App = ()=>{
             <Routes>
                 <Route path="/" element = {<Home/>}/>
                 <Route path="/recipes" element = {<Recipies/>}/>
+                <Route path="/recipes/view" element = {<ViewRecipe/>}/>
             </Routes>
         </div>
         <Footer/>
